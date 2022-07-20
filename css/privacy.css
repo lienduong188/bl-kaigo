@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.privacy-txt{
+	margin-bottom: 35px;
+}
+h4{
+	margin-bottom: 10px;
+}
+@media screen and (max-width:768px){
+	.sec-wrap{
+		width: 90%;
+		margin: 50px auto;
+	}
+}

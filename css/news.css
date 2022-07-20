@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS スマホファースト */
+
+#ttl{
+	margin-bottom: 0;
+}
+dt{
+	padding-top: 15px;
+	color: #00B42A;
+	margin: 0 30px;
+}
+dd{
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	margin: 0 30px;
+}
+dl a dd:hover{
+	color: #D4647A;
+}
+.content-wrap{
+	max-width: 1280px;
+	/* width: 100%; */
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content-item{
+	flex: 100%;
+}
+.btn a{
+	margin-top: 30px;
+}
+.news-sub,
+.blog-sub{
+	width: 90%;
+	margin: auto;
+}
+@media screen and (min-width:769px){
+	.news-sub, .blog-sub{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+	}
+	.content-item{
+		flex: 50%;
+	}
+}
+@media screen and (min-width: 1281px){
+	.sec-wrap{
+		max-width: 90%;
+	}
+}
