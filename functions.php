@@ -90,19 +90,17 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('post_mail', get_template_directory_uri() . '/js/post_mail.js', [], '', true);
 } );
 
+include('inc/constant.php');
 
-add_action( 'phpmailer_init', function ( $phpmailer ) {
-    $phpmailer->isSMTP();  //SMTP有効設定
-    $phpmailer->SMTPAuth = true;  //SMTP認証の有無
-    $phpmailer->Host = 'grit-web.sakura.ne.jp';  //SMTPホスト名
-    $phpmailer->Port = '587';  //587 or 465
-    $phpmailer->SMTPSecure = 'tls';  //tls or ssl
-    $phpmailer->Username = 'inquery@grit-web.sakura.ne.jp';  //ユーザー名
-    $phpmailer->Password = 'Z5Nx6_CBcjag';  //パスワード
-    $phpmailer->From       = "inquery@grit-web.sakura.ne.jp";  //送信者メールアドレス
-    $phpmailer->FromName = "介護ベストライフ";  //送信者名
-    $phpmailer->SMTPDebug = 0;  //デバッグ
-} );
+
+
+
+
+
+//ここからは独自PHPの読み込み。
+//AJAXでwp_mailを起動させるスクリプトを読み込む
+require_once("inc/post_mail.php");
+require_onece("smtp_credential.php");
 
 //テストメールの送信用
 //add_action('wp_head' , function () {
@@ -113,10 +111,3 @@ add_action( 'phpmailer_init', function ( $phpmailer ) {
 //    $converted_res = $ismailed ? '成功！' : '送信できませんでした';
 //    echo 'テストメールの結果: '.$converted_res;
 //});
-
-
-include('inc/constant.php');
-
-//ここからは独自PHPの読み込み。
-//AJAXでwp_mailを起動させるスクリプトを読み込む
-require_once("inc/post_mail.php");

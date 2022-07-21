@@ -34,23 +34,29 @@ function send_mail(){
     define("CUSTOMER_MAIL", $formData["email"]);
     define("REPRY_TITLE", "介護ベストライフへの問い合わせが完了しました。");
     define("REPLY_BODY", $formData["name"] . "様" . "\n"
-        . "この度はGRIT GROUPのWeb制作補助金サポートへお問い合わせいただきありがとうございます。" . "\n"
+        . "この度は介護ベストライフへのお問い合わせへお問い合わせいただきありがとうございます。" . "\n"
         . "\n"
         . "以下のお問い合わせ内容を受け付けました。" . "\n"
         . "\n"
         . "\n"
-        . "相談項目: " . $formData["missionCategory"] . "\n"
-        . "相談サイト: " . $formData["missionUrl"] . "\n"
-        . "補助金用途: " . implode(' / ', $formData["uses"]) . "\n"
-        . "名前: " . $formData["customerName"] . "\n"
-        . "会社名: " . $formData["companyName"] . "\n"
-        . "電話: " . $formData["phone"] . "\n"
+        . "相談項目: " . $formData["category"] . "\n"
+        . "名前: " . $formData["name"] . "\n"
         . "メール: " . $formData["email"] . "\n"
-        . "都道府県: " . $formData["provincial"] . "\n"
+        . "電話: " . $formData["phone"] . "\n"
+        . "件名: " . $formData["title"] . "\n"
         . "内容: " . $formData["message"] . "\n"
         . "\n"
+        . "\n"
         . "3営業日以内に当社担当からご連絡を差し上げます。" . "\n"
-        . "今しばらくお待ちください");
+        . "今しばらくお待ちください" . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+    );
     define("HEADER", array('Content-Type: text/plain; charset=UTF-8'));
     $send = wp_mail( CUSTOMER_MAIL, REPRY_TITLE, REPLY_BODY, HEADER );
 
