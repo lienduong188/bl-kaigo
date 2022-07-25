@@ -65,7 +65,7 @@ function send_mail(){
         . "\n"
         . "---------------------------------"."\n"
         ."お客様には以下の自動返信が送信されています。"."\n"
-        ."件名".$subject_customer
+        ."件名: ".$subject_customer."\n"
         ."本文"."\n"
         .$body_customer;
     $header = 'Content-Type: text/plain; charset=UTF-8';
