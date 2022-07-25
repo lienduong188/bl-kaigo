@@ -63,10 +63,11 @@ function send_mail(){
         . "\n"
         . "\n"
         . "\n"
-        . "---------------------------------"
-        ."お客様には以下の自動返信が送信されています。"
-        .'件名'.$subject_customer
-        .'本文\n'.$body_customer;
+        . "---------------------------------"."\n"
+        ."お客様には以下の自動返信が送信されています。"."\n"
+        ."件名".$subject_customer
+        ."本文"."\n"
+        .$body_customer;
     $header = 'Content-Type: text/plain; charset=UTF-8';
     $send_me = wp_mail( $to_admin, $subject, $body, $header );
 
