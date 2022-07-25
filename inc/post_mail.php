@@ -16,21 +16,7 @@ function send_mail(){
     // JSON文字列をobjectに変換 ⇒ 第2引数をtrueにしないとハマるので注意
     $formData = json_decode($json, true);
 
-    //メール送信をする。
-    $to_admin = get_option('admin_email');
-    $subject = get_option('blogname') . 'の問い合わせ';
-    $body = "介護ベストライフへのお問い合わせです" . "\n"
-        . "\n"
-        . "相談: " . $formData["category"] . "\n"
-        . "名前: " . $formData["name"] . "\n"
-        . "メール: " . $formData["email"] . "\n"
-        . "電話番号: " . $formData["phone"] . "\n"
-        . "件名: " . $formData["title"] . "\n"
-        . "内容: " . $formData["message"] . "\n";
-    $header = 'Content-Type: text/plain; charset=UTF-8';
-    $send_me = wp_mail( $to_admin, $subject, $body, $header );
-
-    //お客さんにも自動返信を行う。
+    //お客さんに自動返信を行う。
     $to_customer = $formData["email"];
     $subject = "介護ベストライフへの問い合わせが完了しました。";
     $body =  $formData["name"] . "様" . "\n"
@@ -58,6 +44,30 @@ function send_mail(){
         . "\n";
     $header = 'Content-Type: text/plain; charset=UTF-8';
     $send_auto_reply = wp_mail( $to_customer, $subject, $body, $header );
+
+
+    //自分とこにもメール送信する。
+    $to_admin = get_option('admin_email');
+    $subject = get_option('blogname') . 'の問い合わせ';
+    $body = "介護ベストライフへのお問い合わせです" . "\n"
+        . "\n"
+        . "相談: " . $formData["category"] . "\n"
+        . "名前: " . $formData["name"] . "\n"
+        . "メール: " . $formData["email"] . "\n"
+        . "電話番号: " . $formData["phone"] . "\n"
+        . "件名: " . $formData["title"] . "\n"
+        . "内容: " . $formData["message"] . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        . "\n"
+        ."お客様には以下の自動返信が送信されています。"
+        .$body;
+    $header = 'Content-Type: text/plain; charset=UTF-8';
+    $send_me = wp_mail( $to_admin, $subject, $body, $header );
 
     // 送信完了したことをフロントエンドに返す。エラーがあればサーバーエラーであったことを返す。
     header("Content-Type: application/json; charset=utf-8");
