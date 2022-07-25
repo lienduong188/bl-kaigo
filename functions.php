@@ -103,7 +103,7 @@ require_once("inc/post_mail.php");
 
 
 //メール
-//add_action('phpmailer_init', function ($phpmailer) {
+add_action('phpmailer_init', function ($phpmailer) {
 //    $phpmailer->isSMTP();  //SMTP有効設定
 //    $phpmailer->SMTPAuth = true;  //SMTP認証の有無
 //    $phpmailer->Host = 'grit-web.sakura.ne.jp';  //SMTPホスト名
@@ -111,12 +111,12 @@ require_once("inc/post_mail.php");
 //    $phpmailer->SMTPSecure = 'tls';  //tls or ssl
 //    $phpmailer->Username = 'inquery@grit-web.sakura.ne.jp';  //ユーザー名
 //    $phpmailer->Password = '';  //パスワード
-//    $phpmailer->From = "inquery@grit-web.sakura.ne.jp";  //送信者メールアドレス
-//    $phpmailer->FromName = "介護ベストライフ";  //送信者名
 //    $phpmailer->SMTPDebug = 0;  //デバッグ
-//});
+    $phpmailer->From = "wordpress@kaigo.grit-japan.co.jp";  //送信者メールアドレス
+    $phpmailer->FromName = "介護ベストライフ";  //送信者名
+});
 
-//テストメールの送信用
+//テストメールの送信用コード
 //add_action('wp_head' , function () {
 //    $test_mail_to   = "";
 //    $subject   = "テスト送信です";

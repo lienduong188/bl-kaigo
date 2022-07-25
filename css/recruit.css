@@ -69,6 +69,11 @@ form{
 	letter-spacing: 0.05em;
 	font-weight: bold;
 	font-size: 18px;
+	align-self: start;
+}
+.Form-Item .form-and-validation {
+	max-width: 410px;
+	width: 100%;
 }
 .Form-Item-Label.isMsg {
 	margin-top: 8px;
