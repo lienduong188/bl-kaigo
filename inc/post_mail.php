@@ -18,8 +18,8 @@ function send_mail(){
 
     //お客さんに自動返信を行う。
     $to_customer = $formData["email"];
-    $subject = "介護ベストライフへの問い合わせが完了しました。";
-    $body =  $formData["name"] . "様" . "\n"
+    $subject_customer = "介護ベストライフへの問い合わせが完了しました。";
+    $body_customer =  $formData["name"] . "様" . "\n"
         . "この度は介護ベストライフへのお問い合わせへお問い合わせいただきありがとうございます。" . "\n"
         . "\n"
         . "以下のお問い合わせ内容を受け付けました。" . "\n"
@@ -43,7 +43,7 @@ function send_mail(){
         . "\n"
         . "\n";
     $header = 'Content-Type: text/plain; charset=UTF-8';
-    $send_auto_reply = wp_mail( $to_customer, $subject, $body, $header );
+    $send_auto_reply = wp_mail( $to_customer, $subject_customer, $body_customer, $header );
 
 
     //自分とこにもメール送信する。
@@ -63,9 +63,10 @@ function send_mail(){
         . "\n"
         . "\n"
         . "\n"
-        . "\n"
+        . "---------------------------------"
         ."お客様には以下の自動返信が送信されています。"
-        .$body;
+        .'件名'.$subject_customer
+        .'本文\n'.$body_customer;
     $header = 'Content-Type: text/plain; charset=UTF-8';
     $send_me = wp_mail( $to_admin, $subject, $body, $header );
 
