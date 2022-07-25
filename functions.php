@@ -100,14 +100,28 @@ include('inc/constant.php');
 //ここからは独自PHPの読み込み。
 //AJAXでwp_mailを起動させるスクリプトを読み込む
 require_once("inc/post_mail.php");
-require_onece("smtp_credential.php");
+
+
+//メール
+//add_action('phpmailer_init', function ($phpmailer) {
+//    $phpmailer->isSMTP();  //SMTP有効設定
+//    $phpmailer->SMTPAuth = true;  //SMTP認証の有無
+//    $phpmailer->Host = 'grit-web.sakura.ne.jp';  //SMTPホスト名
+//    $phpmailer->Port = '587';  //587 or 465
+//    $phpmailer->SMTPSecure = 'tls';  //tls or ssl
+//    $phpmailer->Username = 'inquery@grit-web.sakura.ne.jp';  //ユーザー名
+//    $phpmailer->Password = '';  //パスワード
+//    $phpmailer->From = "inquery@grit-web.sakura.ne.jp";  //送信者メールアドレス
+//    $phpmailer->FromName = "介護ベストライフ";  //送信者名
+//    $phpmailer->SMTPDebug = 0;  //デバッグ
+//});
 
 //テストメールの送信用
 //add_action('wp_head' , function () {
-//    $test_mail_to   = "day9ever@yahoo.co.jp";
+//    $test_mail_to   = "";
 //    $subject   = "テスト送信です";
 //    $mail_body = "テストは正常に送信されました";
-//    $ismailed = wp_mail($test_mail_to, $subject, $mail_body);
-//    $converted_res = $ismailed ? '成功！' : '送信できませんでした';
+//    $isMailed = wp_mail($test_mail_to, $subject, $mail_body);
+//    $converted_res = $isMailed ? '成功！' : '送信できませんでした';
 //    echo 'テストメールの結果: '.$converted_res;
 //});
