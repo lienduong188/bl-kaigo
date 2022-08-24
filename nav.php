@@ -1,7 +1,11 @@
 <header>
 			<div class="h-wrap">
 				<div class="h-item h-logo">
-					<a href="<?= get_site_url(); ?>/"><img src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="Bestlife"></a>
+					<div style="display: flex;justify-content:space-between;">
+						<div style="width: 20px;"></div>
+						<a href="<?= get_site_url(); ?>/"><img src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="Bestlife"></a>
+						<div style="width: 80px;"></div>
+					</div>
 				</div>
 				
 				<div class="sp_tab">
@@ -98,7 +102,7 @@
 				<div class="h-item h-contact pc">
 					<div class="h-contact-txt">
 						<div class="contact-item">
-							<p class="fc-pink ci1"><span class="fw-bolder">お問い合わせ・<br class="sm-pc2">ご相談</span></p>
+							<p class="fc-pink ci1"><span class="fw-bolder">お問い合わせ</span>・<span class="fw-bolder">ご相談</span></p>
 						</div>
 						<div class="contact-item">
 							<div class="h-tel heartbeat">

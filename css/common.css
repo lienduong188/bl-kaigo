@@ -8,7 +8,11 @@ html, body, #wrapper{
 	font-size: 1.1rem;
 	letter-spacing: .05rem;
 }
-p > span {
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+p span{
 	display: inline-block;
 }
 *, *::before, *::after{

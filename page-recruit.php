@@ -23,17 +23,17 @@
 			<section id="recuit">
 				<div class="wrap">
 					<div class="sec-ttl sec-wrap">
-						<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?= kPLATFORM_NAME ?>が求める人財像</span></span></h3>
+						<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?= kPLATFORM_NAME ?>が求める<span>  人財像</span></span></span></h3>
 						<br><hr>
 					</div>
 					<div class="recruit-sub">
 						<div class="recruit-sub-wrap">
 							<h4>働く仲間を募集！</h4>
-							<p>現在、30代～のスタッフ5名でアットホームな職場です。<br>
-							緊急時の対応に備え社用車でも通勤が可能なところが魅力。<br>
-							現地への直行直帰も可能です。 <br><br>
-							看護師、ケアマネージャー、リハビリ職員、事務員として一緒に働く仲間<br>
-							を募集しています。 詳しくはお問い合わせくださいませ。</p>
+							<p style="max-width: 800px;margin:0 auto;">現在、30代～のスタッフ5名で<span>アットホームな職場です。</span><br>
+							緊急時の対応に備え<span>社用車でも</span><span>通勤が可能なところが魅力。</span><br>
+							現地への直行直帰も可能<span>です。</span><br><br>
+							看護師、ケアマネージャー、<span>リハビリ職員、</span><span>事務員</span><span>として</span><span>一緒に働く仲間</span>
+							<span>を募集しています。</span><span>詳しくは</span><span>お問い合わせくださいませ。</span></p>
 						</div>
 					</div>
 				</div>
