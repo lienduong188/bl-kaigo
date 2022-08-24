@@ -8,6 +8,9 @@ html, body, #wrapper{
 	font-size: 1.1rem;
 	letter-spacing: .05rem;
 }
+span {
+	display: inline-block;
+}
 *, *::before, *::after{
 	margin: 0;
 	padding: 0;
