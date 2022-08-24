@@ -54,6 +54,7 @@
 	max-width: 650px;
 	height: auto;
 	z-index: -3;
+	opacity: 0.5;
 }
 
 .kodawari-sub p {
@@ -104,11 +105,11 @@
 }
 /*smartphone*/
 @media screen and (max-width:768px){
-	.ttl-wrap{
-		margin-bottom: 20px;
-	}
 	.about-sub {
 		margin: 150px 0;
+	}
+	.about-sub img{
+		opacity: 0.3;
 	}
 	.about-info-item {
 		width: 85%;

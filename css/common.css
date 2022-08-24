@@ -707,11 +707,11 @@ footer{
 		display: block; 
 	}
 	#g-nav ul {
-		opacity: 0;
+		opacity: 0;	
 		position: absolute;
 		z-index: 999;
-		top:50%;
-		left:50%;
+		top:47%;
+		left:47%;
 		transform: translate(-50%,-50%);
 	}
 	#g-nav.panelactive ul {
@@ -737,12 +737,13 @@ footer{
 		font-weight: bold;
 		display: flex;
 		align-items: center;
+		justify-content: start;
 	}
 	#g-nav li a:hover{
 		color: #fff;	
 	}
 	#g-nav li a p{
-		padding-left: 20px;
+		padding-left: 3vw;
 	}
 	#g-nav li a:last-child{
 		font-size: 1rem;
@@ -882,17 +883,11 @@ footer{
 		font-size: 1rem;
 	}
 	#g-nav ul{
-		left: 50%;
+		left: 47%;
 	}
 	#g-nav li a{
 		padding: 10px 0;
-	}
-	#g-nav li a p{
-		font-size: .9rem;
-	}
-	#g-nav li a p:last-child{
-		font-size: .8rem;
-	}
+	}	
 	#contact{
 		background-size: auto 100%;
 		padding: 20px;
@@ -973,7 +968,7 @@ footer{
 
 @media screen and (min-width:375px) and (max-width:449px){
 	#g-nav ul{
-		left: 50%;
+		left: 47%;
 	}
 	#g-nav li a{
 		padding: 10px 0;
