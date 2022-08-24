@@ -54,7 +54,7 @@
 					</div>
 					<div class="kodawari-sub">
 						<p><?= kPLATFORM_NAME ?>は、利用者さまとスタッフという「人」を第一に考え、<br>すべての人が居心地の良い、最高の事業を作り上げることを目指しています。<br>利用者さまに充実したサービスを受けていただくには、私たちスタッフも<br>気力充実していなければなりません。<br>しっかり食べてよく眠り、規則正しい生活を送りながら、<br>お互いを尊重して高めあえる関係であるために、<br>コミュニケーションをしっかり取ります。<br>万全の状態であることが良いチームワークを生み、<br>利用者さまの信頼につながると信じています。<br>信頼で結ばれた関係は、穏やかで心地良い日々を<br>過ごしていただくために欠かせません。<br>また、毎日の中から新しいことを学び、成長していきます。<br>それはやりがいであり、楽しみでもあります。</p>
-						<img src="<?= get_template_directory_uri(); ?>/images/about2.jpg" alt="">
+						<figure style="display:flex;justify-content:center;margin:80px 0;"><img src="<?= get_template_directory_uri(); ?>/images/about2.jpg" alt=""></figure>
 					</div>
 				</div>
 			</section>

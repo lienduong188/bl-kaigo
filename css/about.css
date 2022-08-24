@@ -65,6 +65,8 @@
 
 .kodawari-sub img {
 	margin: -50px 0;
+	height:40vw;
+	max-height: 320px;
 }
 
 .rinen-sub {
