@@ -53,119 +53,130 @@ $(function () {
 	});
 });
 
-//animation
-function Animate(){
-	$('.bgLRextendTrigger').each(function(){
-		let elemPos = $(this).offset().top+100;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-			$(this).addClass('bgLRextend');
-		}else{
-			$(this).removeClass('bgLRextend');
-		}
-	});	
+document.addEventListener("DOMContentLoaded", () => {
+	Array.from(document.querySelectorAll('.onInitHidden')).forEach((e) => {
+		e.classList.add('hidden');
+		e.classList.remove('hidden');
+	})
+});
 
-	$('.bgappearTrigger').each(function(){
-		let elemPos = $(this).offset().top+100;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-			$(this).addClass('bgappear');
-		}else{
-			$(this).removeClass('bgappear');
-		}
-	});	
-	
-	$('.fadeUpTrigger').each(function(){
-		let elemPos = $(this).offset().top+100;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('fadeUp');
-		}else{
-		$(this).removeClass('fadeUp');
-		}
-	});
-	
-	$('.bounceInLeftTrigger').each(function(){
-		let elemPos = $(this).offset().top+150;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('bounceInLeft');
-		}else{
-		$(this).removeClass('bounceInLeft');
-		}
-	});
-	
-	$('.zoomInTrigger').each(function(){
-		let elemPos = $(this).offset().top+150;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('zoomIn');
-		}else{
-		$(this).removeClass('zoomIn');
-		}
-	});	
-	$('.bounceInTrigger').each(function(){
-		let elemPos = $(this).offset().top+50;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('bounceIn');
-		}else{
-		$(this).removeClass('bounceIn');
-		}
-	});	
-	$('.bounceInRightTrigger').each(function(){
-		let elemPos = $(this).offset().top+50;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('bounceInRight');
-		}else{
-		$(this).removeClass('bounceInRight');
-		}
-	});	
-	
-	$('.bounceInDownTrigger').each(function(){
-		let elemPos = $(this).offset().top+50;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('bounceInDown');
-		}else{
-		$(this).removeClass('bounceInDown');
-		}
-	});	
+const bgLRextendTriggers = document.querySelectorAll('.bgLRextendTrigger'); //アニメーションさせたい要素
+window.addEventListener('scroll', () => {
+  const scroll = window.scrollY; //スクロール量を取得
+  const windowHeight = window.innerHeight; //画面の高さを取得
+  bgLRextendTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bgLRextend'); //is-animatedクラスを加える
+    }
+  })
+});
 
-	$('.bounceInUpTrigger').each(function(){
-		let elemPos = $(this).offset().top-50;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('bounceInUp');
-		}else{
-		$(this).removeClass('bounceInUp');
-		}
-	});	
-	
-	$('.flipInXTrigger').each(function(){
-		let elemPos = $(this).offset().top-50;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
-		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('flipInX');
-		}else{
-		$(this).removeClass('flipInX');
-		}
-	});
+const bgAppearTriggers = document.querySelectorAll('.bgappearTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  bgLRextendTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bgappear'); //is-animatedクラスを加える
+    }
+	})
+});
 
-}
+const fadeUpTriggers = document.querySelectorAll('.fadeUpTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  fadeUpTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('fadeUpT'); //is-animatedクラスを加える
+    }
+	})
+});
+
+const bounceInTriggers = document.querySelectorAll('.bounceInTrigger');
+window.addEventListener('scroll', () => {
+  const scroll = window.scrollY; //スクロール量を取得
+  const windowHeight = window.innerHeight; //画面の高さを取得
+  bounceInTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bounceIn'); //is-animatedクラスを加える
+    }
+  })
+});
+
+const bounceInLeftTriggers = document.querySelectorAll('.bounceInLeftTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  bounceInLeftTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bounceInLeft'); //is-animatedクラスを加える
+    }
+	})
+});
+
+const bounceInRightTriggers = document.querySelectorAll('.bounceInRightTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  bounceInRightTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bounceInRight'); //is-animatedクラスを加える
+    }
+	})
+});
+
+const bounceInUpTriggers = document.querySelectorAll('.bounceInUpTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  bounceInUpTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bounceInUp'); //is-animatedクラスを加える
+    }
+	})
+});
+
+const bounceInDownTriggers = document.querySelectorAll('.bounceInDownTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  bounceInDownTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('bounceInDown'); //is-animatedクラスを加える
+    }
+	})
+});
+
+const zoomInTriggers = document.querySelectorAll('.zoomInTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  zoomInTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('zoomIn'); //is-animatedクラスを加える
+    }
+	})
+});
 	
-$(window).on('load', function(){
-	Animate();
+const flipInXTriggers = document.querySelectorAll('.flipInXTrigger');
+window.addEventListener('scroll', () => {
+	const scroll = window.scrollY; //スクロール量を取得
+	const windowHeight = window.innerHeight; //画面の高さを取得
+  flipInXTriggers.forEach((e) => {
+    const targetPos = e.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+    if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+      e.classList.add('flipInX'); //is-animatedクラスを加える
+    }
+	})
 });
 

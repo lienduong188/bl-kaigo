@@ -100,13 +100,13 @@ function RandomInit() {
 }
 
 function RandomAnimeControl() {
-		let elementPosition = $(elementForRandomAnimation[1]).offset().top - 50;
-		let scroll = $(window).scrollTop();
-		let windowHeight = $(window).height();
+	const elementPosition = $(elementForRandomAnimation[1]).offset().top - 50;
+	const scroll = $(window).scrollTop();
+	const windowHeight = $(window).height();
 
-		if (scroll >= elementPosition - windowHeight) {
-			$(elementForRandomAnimation[1]).textillate(movingTextAnimationObject);
-		}
+	if (scroll >= elementPosition - windowHeight) {
+		$(elementForRandomAnimation[1]).textillate(movingTextAnimationObject);
+	}
 }
 
 $(window).scroll(function () {

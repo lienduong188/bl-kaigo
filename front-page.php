@@ -14,7 +14,7 @@
 		<?php get_template_part('nav'); ?>
 		<main>	
 			<div class="main-visual">
-				<div class="h2">
+				<div class="h2 onInitHidden">
 					<h2 class="randomAnime">住み慣れた環境で</h2>
 					<h2 class="randomAnime">安心して過ごしたいという願いを叶えます</h2>
 				</div>
@@ -45,9 +45,9 @@
 						<div class="service-sub">
 							<p class="bounceInLeftTrigger animated.slower">高齢者や病気を抱える人たちを、地域全体で各々が役割を担って支え合う時代になりました。</p>
 							<div class="btn-list">
-								<div class="btn-sv btn-blue bounceInLeftTrigger animated.slow"><a href="<?php get_template_directory_uri(); ?>/service#homon">訪問介護</a></div>
-								<div class="btn-sv btn-yellow bounceInLeftTrigger animated.slow"><a href="<?php get_template_directory_uri(); ?>service#itaku">居宅介護支援</a></div>
-								<div class="btn-sv btn-green bounceInLeftTrigger animated.slow"><a href="<?php get_template_directory_uri(); ?>service#sodan">相談支援</a></div>
+								<div class="btn-sv btn-blue bounceInLeftTrigger"><a href="<?php get_template_directory_uri(); ?>/service#homon">訪問介護</a></div>
+								<div class="btn-sv btn-yellow bounceInLeftTrigger"><a href="<?php get_template_directory_uri(); ?>service#itaku">居宅介護支援</a></div>
+								<div class="btn-sv btn-green bounceInLeftTrigger"><a href="<?php get_template_directory_uri(); ?>service#sodan">相談支援</a></div>
 							</div>
 						</div><!--service-sub-->
 					</div><!--service-inner-->
@@ -65,7 +65,7 @@
 						</div>
 						<div class="company-sub">
 							<p class="bounceInRightTrigger animated.slower"><?= kPLATFORM_NAME ?>は、『無言のありがとう』 という理念のもと、2020年4月に堺市で 在宅生活支援サービスの提供を開始しました。</p>
-							<div class="btn bounceInRightTrigger animated.slow"><a href="<?php get_template_directory_uri(); ?>company#greeting">詳細はこちら</a></div>
+							<div class="btn bounceInRightTrigger"><a href="<?php get_template_directory_uri(); ?>company#greeting">詳細はこちら</a></div>
 						</div><!--company-sub-->
 					</div><!--company-inner-->
 					<div class="triangle-l fl-r pc"></div>
@@ -93,7 +93,7 @@
 								</a>
 							  <?php endwhile; ?>
 							<?php endif; ?>
-							<div class="btn bounceInLeftTrigger animated.slow"><a href="<?php get_template_directory_uri(); ?>news">一覧を見る</a></div>
+							<div class="btn bounceInLeftTrigger"><a href="<?php get_template_directory_uri(); ?>news">一覧を見る</a></div>
 						</div><!--news-sub-->
 					</div><!--news-inner-->
 					<div class="triangle-r fl-news pc"></div>
