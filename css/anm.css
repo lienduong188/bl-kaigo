@@ -473,10 +473,6 @@ opacity:0;
   }
 }
 
-.bgappearTrigger, .bgLRextendTrigger, .fadeUpTrigger{
-    opacity: 0;
-}
-
 .delay-time05{
 animation-delay: 0.5s;
 }
