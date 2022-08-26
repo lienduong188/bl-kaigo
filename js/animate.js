@@ -164,9 +164,6 @@ function Animate(){
 	});
 
 }
-$(window).scroll(function (){
-	Animate();
-});
 	
 $(window).on('load', function(){
 	Animate();
