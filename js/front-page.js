@@ -76,7 +76,7 @@ particlesJS("particles-js", {
 });
 
 //main visual
-var movingTextAnimationObject = {
+const movingTextAnimationObject = {
 	loop: false,
 	minDisplayTime: 50,
 	initialDelay: 10,
@@ -102,7 +102,7 @@ function RandomInit() {
 function RandomAnimeControl() {
 	const elementPosition = $(elementForRandomAnimation[1]).offset().top - 50;
 	const scroll = $(window).scrollTop();
-	const windowHeight = $(window).height();
+	let windowHeight = $(window).height();
 
 	if (scroll >= elementPosition - windowHeight) {
 		$(elementForRandomAnimation[1]).textillate(movingTextAnimationObject);

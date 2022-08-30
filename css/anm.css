@@ -474,17 +474,17 @@ opacity:0;
 }
 
 .delay-time05{
-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .delay-time03{
-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 /*ハンバーガーメニュー*/
 @keyframes gnaviAnime{
-0% {
-opacity: 0;
-}
+  0% {
+    opacity: 0;
+  }
 100% {
 opacity: 1;
 }

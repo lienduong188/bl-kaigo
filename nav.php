@@ -3,7 +3,7 @@
 				<div class="h-item h-logo">
 					<div style="display: flex;justify-content:space-between;">
 						<div style="width: 20px;"></div>
-						<a href="<?= get_site_url(); ?>/"><img src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="Bestlife"></a>
+						<a href="<?= get_site_url(); ?>/" style="font-size:0"><img src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="Bestlife"></a>
 						<div style="width: 80px;"></div>
 					</div>
 				</div>
