@@ -62,7 +62,7 @@
 				</div><!--ここまでmoblie_nav-->
 				
 				<div class="h-item h-nav pc_nav">
-					<h1 style="font-size:0.9rem; color: #000000; font-weight: bold;">介護のことなら<?= kPLATFORM_NAME ?></h1>
+					<h1 style="font-size:0.9rem; color: #333333; font-weight: bold;">介護のことなら<?= kPLATFORM_NAME ?></h1>
 					<nav>
 						<ul>
 							<li>
@@ -102,7 +102,7 @@
 				<div class="h-item h-contact pc">
 					<div class="h-contact-txt">
 						<div class="contact-item">
-							<p class="fc-pink ci1"><span class="fw-bolder" style="display:inline-block;">お問い合わせ</span>・<span class="fw-bolder" style="display:inline-block;">ご相談</span></p>
+							<p class="fc-pink ci1"><span class="fw-bolder text-pink" style="display:inline-block;">お問い合わせ</span>・<span class="fw-bolder text-pink" style="display:inline-block;">ご相談</span></p>
 						</div>
 						<div class="contact-item">
 							<div class="heartbeat">
@@ -118,7 +118,7 @@
 					</div>	
 					<div class="h-mail btnshine" style="min-width:85px;">
 						<a href="<?= get_site_url(); ?>/recruit#form"><img src="<?= get_template_directory_uri(); ?>/images/mail.png" alt="メール相談">
-						<p>メール<br class="sm-pc">相談</p></a>
+						<p style="color:#eeeeee">メール<br class="sm-pc">相談</p></a>
 					</div>
 				</div><!--h-contact-->
 			</div><!--h-wrap-->

@@ -40,13 +40,13 @@
 		width: 150px;
 	}
 	.h-nav nav ul li a{
-		color: #000;
+		color: #333333;
 		display: block;
 		padding: 20px 0 10px;
 	}
 	.h-nav nav ul li a:hover{
 		background-color: #FEE7E7;
-		color: #fff;
+		color: #eee;
 	}
 	/*header contact*/
 	.h-contact{
@@ -58,7 +58,7 @@
 		min-width:180px;
 	}
 	.contact-item:first-child{
-		border-bottom: 1px solid #000;
+		border-bottom: 1px solid #333;
 		margin-bottom: 10px;
 		padding-bottom: 10px;
 	}
@@ -748,7 +748,7 @@
 		max-width: 85%;
 		margin: auto;
 		color: #fff;
-		text-shadow: #000 1px 0 8px;
+		text-shadow: #333 1px 0 8px;
 	}
 	.h2{
 		padding-top: 25vh;

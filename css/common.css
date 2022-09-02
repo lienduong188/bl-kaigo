@@ -8,6 +8,11 @@ html, body, #wrapper{
 	font-size: 1.1rem;
 	letter-spacing: .05rem;
 }
+
+h1, h2, h3, h4, h5, h6, p, span, dl, dd, dt, ul, li, div {
+	color:#333333;
+}
+
 h1 span,
 h2 span,
 h3 span,
@@ -33,6 +38,12 @@ img{
 .fc-pink{
 	color: #D4647A;
 }
+.text-pink {
+	color: #D4647A;
+}
+.text-white {
+	color: #eeeeee;
+}
 .fw-bolder{
 	font-weight: bolder;
 	letter-spacing: 0.2rem;
@@ -52,7 +63,7 @@ img{
     max-width: 220px;
 	width: 100%;
     padding: 10px 25px;
-    color: #313131;
+    color: #333333;
     transition: 0.3s ease-in-out;
     font-weight: 600;
     box-shadow: 5px 5px 0 #00B42A;
@@ -139,7 +150,7 @@ hr{
 }
 .contact-wrap{
 	margin: auto;
-	background-color: #fff;
+	background-color: #eee;
 	padding: 50px 0;
 	border: 3px solid #EF93B6;
 }
@@ -161,7 +172,7 @@ footer{
 	font-size: 1rem;
 }
 .sitemap-item a{
-	color: #000;
+	color: #333;
 	transition: all .2s;
 }
 
@@ -213,17 +224,17 @@ footer{
 		width: 150px;
 	}
 	.h-nav nav ul li a{
-		color: #000;
+		color: #333;
 		display: block;
 		padding: 20px 0 10px;
 	}
 	.h-nav nav ul li a:hover{
 		background-color: #FEE7E7;
-		color: #fff;
+		color: #eee;
 	}
 	.btn a:hover {
 		background-color: #00B42A;
-		color: #fff;
+		color: #eee;
 		box-shadow: 0 0 0;
 		transform: translate(5px, 5px);
 	}
@@ -236,7 +247,7 @@ footer{
 		margin: auto;
 	}
 	.contact-item:first-child{
-		border-bottom: 1px solid #000;
+		border-bottom: 1px solid #333;
 		margin-bottom: 10px;
 		padding-bottom: 10px;
 	}
@@ -264,7 +275,7 @@ footer{
 		text-align: center;
 	}
 	.h-mail a{
-		color: #fff;
+		color: #eee;
 		font-weight: 800;
 		padding-top: -10px;
 	}
@@ -355,12 +366,12 @@ footer{
 	.go-top{
 		text-align: center;
 		background-color: #00B42A;
-		border: 3px solid #fff;
+		border: 3px solid #eee;
 		padding: 5px 15px;
 		border-radius: 5px;
 	}
 	.go-top a{
-		color: #fff;
+		color: #eee;
 		display: block;
 	}
 	.fa-angle-up{
@@ -540,7 +551,7 @@ footer{
 		align-items: center;
 	}
 	#g-nav li a:hover{
-		color: #fff;	
+		color: #eee;	
 	}
 	#g-nav li a p{
 		padding-left: 20px;
@@ -740,7 +751,7 @@ footer{
 		justify-content: start;
 	}
 	#g-nav li a:hover{
-		color: #fff;	
+		color: #eee;	
 	}
 	#g-nav li a p{
 		padding-left: 3vw;

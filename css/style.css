@@ -8,6 +8,9 @@ html, body, #wrapper{
 	font-size: 1.1rem;
 	letter-spacing: .05rem;
 }
+h1, h2, h3, h4, h5, h6, p {
+	color:#333333;
+}
 *, *::before, *::after{
 	margin: 0;
 	padding: 0;
@@ -53,8 +56,8 @@ h2{
 	padding: 10px 0;
 	max-width: 900px;
 	margin: auto;
-	color: #fff;
-	text-shadow: #000 1px 0 8px;
+	color: #eee;
+	text-shadow: #333 1px 0 8px;
 }
 .h2{
 	letter-spacing: .3rem;
