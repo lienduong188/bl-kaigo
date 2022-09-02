@@ -16,43 +16,43 @@
 									<li>
 										<a href="<?= get_site_url(); ?>/about/" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/about.png" alt="私たちについて">
-											<p>私たちについて</p>
+											<p class="text-pink">私たちについて</p>
 										</a>
 									</li>
 									<li>
 										<a href="<?= get_site_url(); ?>/service/" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/service.png" alt="サービス">
-											<p>サービス</p>
+											<p class="text-pink">サービス</p>
 										</a>
 									</li>
 									<li>
 										<a href="<?= get_site_url(); ?>/company/" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/company.png" alt="会社案内">
-											<p>会社案内</p>
+											<p class="text-pink">会社案内</p>
 										</a>
 									</li>
 									<li>
 										<a href="<?= get_site_url(); ?>/news/" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/news.png" alt="新着情報">
-											<p>新着情報</p>
+											<p class="text-pink">新着情報</p>
 										</a>
 									</li>
 									<li>
 										<a href="<?= get_site_url(); ?>/recruit/" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/recruit.png" alt="採用情報">
-											<p>採用情報</p>
+											<p class="text-pink">採用情報</p>
 										</a>
 									</li>
 									<li>
 										<a href="<?= get_site_url(); ?>/recruit#form" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/mail-sp.png" alt="メール相談">
-											<p>メール相談</p>
+											<p class="text-pink">メール相談</p>
 										</a>
 									</li>
 									<li>
 										<a href="tel:<?= kPHONE ?>" class="animoBubble5">
 											<img src="<?= get_template_directory_uri(); ?>/images/tel-sp.png" alt="<?= kPHONE ?>">
-											<p><?= kPHONE ?></p>
+											<p class="text-pink"><?= kPHONE ?></p>
 										</a>
 									</li>
 								</ul>
