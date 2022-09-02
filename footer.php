@@ -2,8 +2,11 @@
 				<div class="ft-wrap">
 					<div class="ft-item ft-logo">
 						<a href="<?= get_site_url(); ?>/"><img src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="Bestlife"></a>
-						<div class="ft-tel">
-							<a href="tel:<?= kPHONE ?>"><p class="fc-pink fs-12"><?= kPHONE ?></p></a>
+						<div class="">
+							<a href="tel:<?= kPHONE ?>">
+								<img src="<?= get_template_directory_uri(); ?>/images/phone.svg" style="display:inline-block;height:25px;vertical-align:middle;" />
+								<p class="fc-pink fs-12" style="display:inline-block;vertical-align:middle;font-weight:bold;"><?= kPHONE ?></p>
+							</a>
 						</div>
 						<p class="copyright"><small>&copy;2022 介護老人保健施設  <?= kPLATFORM_NAME ?></small></p>
 					</div>
