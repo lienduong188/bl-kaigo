@@ -102,18 +102,21 @@
 				<div class="h-item h-contact pc">
 					<div class="h-contact-txt">
 						<div class="contact-item">
-							<p class="fc-pink ci1"><span class="fw-bolder">お問い合わせ</span>・<span class="fw-bolder">ご相談</span></p>
+							<p class="fc-pink ci1"><span class="fw-bolder" style="display:inline-block;">お問い合わせ</span>・<span class="fw-bolder" style="display:inline-block;">ご相談</span></p>
 						</div>
 						<div class="contact-item">
-							<div class="h-tel heartbeat">
-								<a href="tel:<?= kPHONE ?>"><p class="fc-pink ci2"><?= kPHONE ?></p></a>
+							<div class="heartbeat">
+								<a href="tel:<?= kPHONE ?>">
+								<img src="<?= get_template_directory_uri(); ?>/images/phone.svg" style="height:25px;display:inline-block;vertical-align:middle;" />
+									<p class="fc-pink" style="display:inline-block;vertical-align:middle;font-weight:bold;"><?= kPHONE ?></p>
+								</a>
 							</div>
 							<div class="ci3">
 								<p>(受付10:00~16:00/土日・祝定休)</p>
 							</div>
 						</div>	
 					</div>	
-					<div class="h-mail btnshine">
+					<div class="h-mail btnshine" style="min-width:85px;">
 						<a href="<?= get_site_url(); ?>/recruit#form"><img src="<?= get_template_directory_uri(); ?>/images/mail.png" alt="メール相談">
 						<p>メール<br class="sm-pc">相談</p></a>
 					</div>

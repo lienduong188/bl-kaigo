@@ -55,6 +55,7 @@
 	.h-contact-txt{
 		padding-right: 5px;
 		margin: auto;
+		min-width:180px;
 	}
 	.contact-item:first-child{
 		border-bottom: 1px solid #000;
@@ -75,7 +76,6 @@
 		background: url("../images/tel.png") no-repeat left center / 30px;
 	}
 	.h-tel p{
-		padding-left: 35px;
 		font-size: 1.35rem;
 		font-weight: bolder;
 	}
@@ -311,9 +311,6 @@
 	}
 	.h-tel{
 		background: url("../images/tel.png") no-repeat left center / 30px;
-	}
-	.h-tel p{
-		padding-left: 35px;
 	}
 	.h-mail img{
 		padding-top: 10px;
