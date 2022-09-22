@@ -27,9 +27,13 @@
 						<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?= kPLATFORM_NAME ?>について</span></span></h3>
 					</div>
 					<div class="about-sub fadeUpTrigger">
-						<p>わたしたちは、利用者さま、スタッフを第一に考えています。<br>
-						利用者さまと介護者、という仕事上の立場で分けてしまう関係は、なんとなくさみしいので、<br>
-						せっかくですから介護サービスを通じていっしょに良い時間を過ごしませんか？</p>
+						<p>利用者が可能な限り自立した在宅生活を続けられるよう、<br>
+1.　身体介護、家事支援等による利用者の心身機能の低下防止、維持向上<br>
+2.　利用者とのふれあいの中での社会的孤立感解消、楽しい人生を支援<br>
+3.　家族介護者の身体的、精神的負担の軽減<br>
+<br><br>
+・・・そして、「ベストライフのホームヘルパーに来てもらって良かった。安心だ。」と<br>
+利用者、家族に思ってもらえるヘルパー事業を目指しています。</p>
 						<div class="btn bounceInDownTrigger"><a href="<?php get_template_directory_uri(); ?>/about">詳細はこちら</a></div>
 					</div>
 				</div>
@@ -43,7 +47,8 @@
 							<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">サービスのご紹介</span></span></h3>
 						</div>
 						<div class="service-sub">
-							<p class="bounceInLeftTrigger animated.slower">高齢者や病気を抱える人たちを、地域全体で各々が役割を担って支え合う時代になりました。</p>
+							<p class="bounceInLeftTrigger animated.slower">高齢者や病気を抱える方々を、地域全体で各々が役割を担って支え合う時代になりました
+。</p>
 							<div class="btn-list">
 								<div class="btn-sv btn-blue bounceInLeftTrigger"><a href="<?php get_template_directory_uri(); ?>/service#homon">訪問介護</a></div>
 								<div class="btn-sv btn-yellow bounceInLeftTrigger"><a href="<?php get_template_directory_uri(); ?>service#itaku">居宅介護支援</a></div>
