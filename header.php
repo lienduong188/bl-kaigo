@@ -22,7 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#f4cbc0">
+<meta name="theme-color" content="#FEE7E7">
 <!-- javascriptファイルへカスタムデータ属性を使って、イメージが格納されているディレクトリを渡すだけのscriptタグ -->
 <script id="data-bridge" data-themeuri="<?= get_template_directory_uri() ?>"></script>	
 <link rel="shortcut icon" href="<?= get_template_directory_uri() ?>/images/icon/favicon.ico">
