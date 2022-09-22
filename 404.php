@@ -11,7 +11,7 @@
 		max-width: 1280px;
 		width: 100%;
 		margin: 10vh auto 0;
-		height: 45vh;
+		height: 80vh;
 		text-align: center;
 		align-items: center;
 	}
@@ -29,6 +29,9 @@
 <?php get_template_part('nav'); ?>
 <main>
 	<h4>ご指定のページが見つかりません。</h4>
+
+	<div style="height:30%"><img src="<?= get_template_directory_uri(); ?>/images/404.png" alt="" style="height:100%"></div>
+
 	<p>申し訳ございません。<br>
 	お客様がお探しのページが見つかりませんでした。<br>
 	削除されたか、入力したURLが間違っている可能性があります。<br>
