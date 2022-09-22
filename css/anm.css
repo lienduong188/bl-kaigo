@@ -30,9 +30,11 @@
 	transform:translate3d(-50%,-50%,0) scale3d(0,0,0);
 	transition:transform .6s ease-in-out;
 }
-.animoBubble5:hover{
+.animoBubble5:hover, 
+.animoBubble5:hover p{
 	cursor:pointer;
 	color:#fff;
+  transition-delay: .2s;
 }
 .animoBubble5:hover::before{
 	transform:translate3d(-50%,-50%,0) scale3d(15,15,15)
