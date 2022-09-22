@@ -49,6 +49,9 @@ img{
 	font-weight: bolder;
 	letter-spacing: 0.2rem;
 }
+.fw-bolder:hover{
+	color: #D4647A;
+}
 .br-sp, .sm-pc, .sm-pc2{
 	display: none;
 }
