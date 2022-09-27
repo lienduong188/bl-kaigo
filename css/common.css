@@ -686,8 +686,9 @@ footer{
 	.h-wrap{
 		align-items: center;
 	}
-	.h-logo img{
-		padding: 10px 0;
+	.h-logo{
+		height: 100px;
+		padding: 10px;
 	}
 	/*navi*/
 	#g-nav.panelactive{

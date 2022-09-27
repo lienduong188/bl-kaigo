@@ -244,4 +244,8 @@ footer{
 	.md\:hidden {
 		display: none;
 	}
+	.h-logo{
+		height: 100px;
+		padding: 10px;
+	}
 }
