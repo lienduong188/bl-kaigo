@@ -110,7 +110,7 @@
 	}
 	/*セクション共有*/
 	.about-wrap, .service-wrap, .company-wrap, .news-wrap, .contact-wrap, .ft-wrap{
-		max-width: 1280px;
+		max-width: 12G80px;
 	}
 	.service-inner, .company-inner, .news-inner{
 		width: 600px;
@@ -188,7 +188,7 @@
 	
 	/*news*/
 	#news h3{
-		width: 230px;
+		width: 113px;
 	}
 	.fl-news{
 		margin-left: 600px;
@@ -538,7 +538,7 @@
 	
 	/*news*/
 	#news h3{
-		width: 230px;
+		width: 113px;
 	}
 	.news-wrap{
 		background: url("../images/news.jpg") no-repeat center center;
@@ -799,7 +799,7 @@
 	
 	/*news*/
 	#news h3{
-		width: 160px;
+		width: 80px;
 	}
 	.news-wrap{
 		background: url("../images/news.jpg") no-repeat center center;

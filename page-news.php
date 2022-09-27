@@ -48,7 +48,7 @@
 					</div>
 				</section>
 
-				<section id="blog" class="content-item">
+				<!-- <section id="blog" class="content-item">
 					<div class="sec-wrap">
 						<div class="sec-ttl">
 							<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">ブログ</span></span></h3>
@@ -70,11 +70,11 @@
 							  endwhile;
 							  endif;
 							?>
-							   <!-- <div class="btn"><a href="#">一覧を見る</a></div> -->
+							   <div class="btn"><a href="#">一覧を見る</a></div>
 						  </dl>
 						</div>
 					</div>
-				</section>
+				</section> -->
 			</div>
 			
 			

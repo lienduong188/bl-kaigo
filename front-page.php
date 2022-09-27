@@ -82,8 +82,8 @@
 				<div class="news-wrap bounceInLeftTrigger">
 					<div class="news-inner">
 						<div class="sec-ttl">
-							<p class="ttl-en">INFORMATION ・ BLOG</p>
-							<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">新着情報・ブログ</span></span></h3>
+							<p class="ttl-en">INFORMATION</p>
+							<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">新着情報</span></span></h3>
 						</div>
 						<div class="news-sub">
 							<?php $the_query = new WP_Query(['posts_per_page' => 4, 'post_status' => 'publish' ,'category_name' => 'news']); ?>
