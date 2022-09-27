@@ -28,15 +28,17 @@
 </style>
 <?php get_template_part('nav'); ?>
 <main>
-	<h4>ご指定のページが見つかりません。</h4>
+	<div class="padding10">
+		<h4>ご指定のページが見つかりません。</h4>
 
-	<div style="height:30%"><img src="<?= get_template_directory_uri(); ?>/images/404.png" alt="" style="height:100%"></div>
+		<div style="height:30%"><img src="<?= get_template_directory_uri(); ?>/images/404.png" alt="" style="height:100%"></div>
 
-	<p>申し訳ございません。<br>
-	お客様がお探しのページが見つかりませんでした。<br>
-	削除されたか、入力したURLが間違っている可能性があります。<br>
-	お手数ですが、上部メニューバーから目的のページをお探しください。</p>
-	<div class="btn bounceInDownTrigger"><a href="<?= get_site_url(); ?>">トップページへ戻る</a></div>
+		<p>申し訳ございません。<br>
+		お客様がお探しのページが見つかりませんでした。<br>
+		削除されたか、入力したURLが間違っている可能性があります。<br>
+		お手数ですが、上部メニューバーから目的のページをお探しください。</p>
+		<div class="btn bounceInDownTrigger"><a href="<?= get_site_url(); ?>">トップページへ戻る</a></div>
+	</div>
 </main>
 
 <?php get_footer(); ?>
