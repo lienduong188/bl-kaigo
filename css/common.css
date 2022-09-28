@@ -372,22 +372,23 @@ footer{
 		bottom: 5%;
 		z-index: 9999;
 		transition: .6s;
+		background-color: #00B42A;
 		border: 5px solid #00B42A;
 		border-radius: 5px;
 	}
 	.go-top{
 		text-align: center;
 		background-color: #00B42A;
-		border: 3px solid #eee;
-		padding: 5px 15px;
+		border: 3px solid #fff;
 		border-radius: 5px;
+		padding: 2px 10px;
 	}
 	.go-top a{
 		color: #eee;
 		display: block;
 	}
 	.fa-angle-up{
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 	}
 	.go-top p{
 		font-size: .9rem;
