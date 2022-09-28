@@ -97,14 +97,14 @@
 								<p>わたしたちの仕事は、性質上、利用者様のところに常駐するわけではありません。その分、利用者様一人ひとりの容態変化及び現在の容態観察が大変です。また、安定しているお客様ばかりではないため、おろそかにできない問題に対する看護職の判断を迫られたときに難しいと感じますが、その分、働いていて様々なやりがいを日々感じられます。</p>
 							</div>
 							<div class="slick-item">
-								<img src="<?= get_template_directory_uri(); ?>/images/staff1.png" alt="メンバーの顔アイコン">
+								<img src="<?= get_template_directory_uri(); ?>/images/staff4.png" alt="メンバーの顔アイコン">
 								<div class="staff-ttl"><h5>岩村 友紀</h5>
 								<p>新入社員</p></div>
 								<p class="staff-ttl-sub">指導がきっちりしていて、安心して働けています。</p>
 								<p>介護業界にははじめて入社しましたが、わからないことだらけだったのですが、周りの方に助けていただき、いろんな経験ができました。この仕事を続けていくなかで、いちばんのやりがいを感じるところは、先輩方の言葉と似ていますが、「感謝の言葉をかけてくださる方がいて誰かの役に立てる仕事だ」ということです。利用者様の笑顔が日々の励みです。</p>
 							</div>
 							<div class="slick-item">
-								<img src="<?= get_template_directory_uri(); ?>/images/staff2.png" alt="メンバーの顔アイコン">
+								<img src="<?= get_template_directory_uri(); ?>/images/staff5.png" alt="メンバーの顔アイコン">
 								<div class="staff-ttl"><h5>花岡 美和</h5>
 								<p>一般職員</p></div>
 								<p class="staff-ttl-sub">ご家族の一員となって施設探しに参加します</p>
