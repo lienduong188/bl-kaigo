@@ -191,6 +191,11 @@ footer{
 	opacity: 0;
 }
 
+.h-logo-img{
+	width:110px;
+	aspect-ratio: 36/25;
+}
+
 /*responsive*/
 /*PC*/
 @media screen and (min-width:769px){
@@ -487,9 +492,6 @@ footer{
 	.h-wrap{
 		display: block;
 	}
-	.h-logo img{
-		padding: 10px 0;
-	}
 	/*navi*/
 	#g-nav.panelactive{
 		position:fixed;
@@ -641,6 +643,14 @@ footer{
 		top: 90%;
 		left: 33%;
 	}
+	.h-logo{
+		height: 70px;
+		padding: 10px;
+	}
+	.h-logo-img{
+		width:65px;
+		aspect-ratio: 36/25;
+	}
 }
 @media screen and (min-width:769px) and (max-width:869px){
 	.ft-tel{
@@ -687,8 +697,12 @@ footer{
 		align-items: center;
 	}
 	.h-logo{
-		height: 100px;
+		height: 70px;
 		padding: 10px;
+	}
+	.h-logo-img{
+		width:65px;
+		aspect-ratio: 36/25;
 	}
 	/*navi*/
 	#g-nav.panelactive{

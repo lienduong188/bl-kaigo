@@ -240,12 +240,21 @@ footer{
 	opacity: 0;
 }
 
-@media screen and (max-width:768px){
+.h-logo-img{
+	width:110px;
+	aspect-ratio: 36/25;
+}
+
+@media screen and (max-width:999px){
 	.md\:hidden {
 		display: none;
 	}
 	.h-logo{
-		height: 100px;
+		height: 70px;
 		padding: 10px;
+	}
+	.h-logo-img{
+		width:65px;
+		aspect-ratio: 36/25;
 	}
 }
