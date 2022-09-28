@@ -26,6 +26,10 @@ img{
 	max-width: 100%;
 	height: auto;
 }
+input[type="submit"] {
+	appearance: none;
+	-webkit-appearance: none;
+}
 #particles-js{ 
 	position:fixed;
 	z-index:-1;
