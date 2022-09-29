@@ -81,11 +81,11 @@ function sendMessages() {
         const response = xhr.responseText;
         if(response.includes('エラー') || response.includes('0')){
             console.log('サーバー側によるエラーが発生してしまったようです。');
-            const timeout = 10000;
+            const timeout = 5000;
             autoDisaposalModal(response, timeout);
         } else {
             console.log('お問い合わせいただけたようでありがとうございます。');
-            const timeout = 10000;
+            const timeout = 5000;
             autoDisaposalModal(response, timeout);
         }
     }
@@ -122,67 +122,18 @@ function autoDisaposalModal (message, timeout) {
      * 自動的に消えるポップアップ関数。モーダルを作って差し込み
      */
     const dialog = `<div id="modalWrap" style="{display: none; background: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 100; overflow: hidden;}">
-                        <div class="modal">
-                            <div class="modal-content">
-                                <span class="close-button">×</span>
-                                <h1>${message}</h1>
-                            </div>
-                        </div>
-                    <style>
-                    .trigger{
-                          text-align: center;
-                        padding: 7px 13px;
-                        background: #3e3e3e;
-                        color: #fff;
-                        font-size: 15px;
-                        outline: none;
-                        border: none;
-                        border-radius: 5px;
-                        font-family: cursive;
-                    }
-                    
-                    .modal {
-                        position: fixed;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(0, 0, 0, 0.5);
-                        opacity: 0;
-                        visibility: hidden;
-                        transform: scale(1.1);
-                        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-                    }
-                    .modal-content {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        background-color: white;
-                        padding: 1rem 1.5rem;
-                        width: 24rem;
-                        border-radius: 0.5rem;
-                    }
-                    .close-button {
-                        float: right;
-                        width: 1.5rem;
-                        line-height: 1.5rem;
-                        text-align: center;
-                        cursor: pointer;
-                        border-radius: 0.25rem;
-                        background-color: lightgray;
-                    }
-                    .close-button:hover {
-                        background-color: darkgray;
-                    }
-                    .show-modal {
-                        opacity: 1;
-                        visibility: visible;
-                        transform: scale(1.0);
-                        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-                    }
-
-                    </style>
+								<div class="modalBox" id="modalBox" style="position: fixed; width: 85%; max-width: 420px; height: 0; top: 0; bottom: 0; left: 0; right: 0; margin: auto; overflow: hidden; opacity: 1; display: none; border-radius: 3px; z-index: 1000;">
+									<div class="modalInner" id="modalInner" style="padding: 10px; text-align: center; box-sizing: border-box; background: rgba(0, 0, 0, 0.7); color: #fff;">
+									${message}
+									</div>
+                                </div>
+                                <div>
+                                    <style>
+                                        #modalInner  p {
+                                            color: #FFFFFF;
+                                        }
+                                    </style>
+                                </div>
                     </div>`
     const modalDialog = new DOMParser().parseFromString(dialog, "text/html").querySelector("html body").firstElementChild;
     document.querySelector('html body').appendChild(modalDialog);
