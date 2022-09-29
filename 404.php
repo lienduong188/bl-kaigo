@@ -31,7 +31,9 @@
 	<div class="padding10">
 		<h4>ご指定のページが見つかりません。</h4>
 
-		<div style="height:30%"><img src="<?= get_template_directory_uri(); ?>/images/404.png" alt="" style="height:100%"></div>
+		<div style="height:30vw; min-height:200px; max-height:300px;">
+			<img src="<?= get_template_directory_uri(); ?>/images/404.png" alt="" style="height:100%; object-fit:contain;">
+		</div>
 
 		<p>申し訳ございません。<br>
 		お客様がお探しのページが見つかりませんでした。<br>
