@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="Form-Item">
-                            <p class="Form-Item-Label">件名</p>
+                            <p class="Form-Item-Label"><span class="Form-Item-Label-NoNeeded">任意</span>件名</p>
                             <div class="form-and-validation">
                                 <input type="text" id="title" class="Form-Item-Input">
                             </div>

@@ -91,6 +91,20 @@ form{
 	color: #fff;
 	font-size: 14px;
 }
+.Form-Item-Label-NoNeeded {
+	border-radius: 6px;
+	border: #00B42A solid 1px;
+	margin-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 48px;
+	display: inline-block;
+	text-align: center;
+	background: #FFFFFF;
+	color: #00B42A;
+	font-size: 14px;
+	font-weight: 400;
+}
 .Form-Item-Select{
 	cursor: pointer;
 	-webkit-appearance: none;
@@ -199,6 +213,13 @@ form{
 		margin-top: 0;
 	  }
 	.Form-Item-Label-Required {
+		border-radius: 4px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		width: 32px;
+		font-size: 10px;
+  	}
+	.Form-Item-Label-NoNeeded {
 		border-radius: 4px;
 		padding-top: 4px;
 		padding-bottom: 4px;
