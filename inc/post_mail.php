@@ -43,8 +43,8 @@ function send_mail(){
         . "\n"
         . "\n";
     $header = 'Content-Type: text/plain; charset=UTF-8';
-    $send_auto_reply = wp_mail( $to_customer, $subject_customer, $body_customer, $header );
-
+    // $send_auto_reply = wp_mail( $to_customer, $subject_customer, $body_customer, $header );
+    $send_auto_reply = true;
 
     //自分とこにもメール送信する。
     $to_admin = get_option('admin_email');
@@ -69,7 +69,8 @@ function send_mail(){
         ."本文"."\n"
         .$body_customer;
     $header = 'Content-Type: text/plain; charset=UTF-8';
-    $send_me = wp_mail( $to_admin, $subject, $body, $header );
+    // $send_me = wp_mail( $to_admin, $subject, $body, $header );
+    $send_me = true;
 
     // 送信完了したことをフロントエンドに返す。エラーがあればサーバーエラーであったことを返す。
     header("Content-Type: application/json; charset=utf-8");

@@ -21,7 +21,7 @@
 			</div>
 			
 			<section id="about">
-				<div class="about-wrap">
+				<div class="about-wrap container">
 					<div class="sec-ttl fadeUpTrigger">
 						<p class="ttl-en">ABOUT</p>
 						<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger"><?= kPLATFORM_NAME ?>について</span></span></h3>
@@ -40,7 +40,7 @@
 			</section><!--about-->
 			
 			<section id="service">
-				<div class="service-wrap bounceInLeftTrigger">
+				<div class="service-wrap container bounceInLeftTrigger">
 					<div class="service-inner">
 						<div class="sec-ttl">
 							<p class="ttl-en">SERVICE</p>
@@ -58,11 +58,11 @@
 					</div><!--service-inner-->
 					<div class="triangle-r fl-l pc"></div>
 				</div><!--sec-wrap-->
-				<div class="service-bg pc"></div>
+				<div class="service-bg container pc"></div>
 			</section><!--service-->
 			
 			<section id="company">
-				<div class="company-wrap bounceInRightTrigger">
+				<div class="company-wrap container bounceInRightTrigger">
 					<div class="company-inner">
 						<div class="sec-ttl">
 							<p class="ttl-en">COMPANY</p>
@@ -75,12 +75,12 @@
 					</div><!--company-inner-->
 					<div class="triangle-l fl-r pc"></div>
 				</div><!--sec-wrap-->
-				<div class="company-bg pc"></div>
+				<div class="company-bg container pc"></div>
 			</section><!--company-->
 			
 			<section id="news">
-				<div class="news-wrap bounceInLeftTrigger">
-					<div class="news-inner">
+				<div class="news-wrap container bounceInLeftTrigger">
+					<div class="news-inner" style="margin-top: 300px;">
 						<div class="sec-ttl">
 							<p class="ttl-en">INFORMATION</p>
 							<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">新着情報</span></span></h3>
@@ -103,7 +103,7 @@
 					</div><!--news-inner-->
 					<div class="triangle-r fl-news pc"></div>
 				</div><!--sec-wrap-->
-				<div class="news-bg pc"></div>
+				<div class="news-bg container pc"></div>
 			</section><!--news-->
 			
 			<section id="contact">
