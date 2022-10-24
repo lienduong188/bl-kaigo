@@ -80,7 +80,7 @@
 			
 			<section id="news">
 				<div class="news-wrap container bounceInLeftTrigger">
-					<div class="news-inner" style="margin-top: 300px;">
+					<div class="news-inner">
 						<div class="sec-ttl">
 							<p class="ttl-en">INFORMATION</p>
 							<h3><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">新着情報</span></span></h3>
