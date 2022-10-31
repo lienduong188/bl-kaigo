@@ -110,7 +110,7 @@
 	}
 	/*セクション共有*/
 	.about-wrap, .service-wrap, .company-wrap, .news-wrap, .contact-wrap, .ft-wrap{
-		max-width: 12G80px;
+		max-width: 1280px;
 	}
 	.service-inner, .company-inner, .news-inner{
 		width: 600px;
@@ -196,6 +196,7 @@
 	}
 	.news-bg{
 		background: url("../images/news.jpg") no-repeat bottom right;
+		margin-top: -380px;
 	}
 
 	/*footer contact*/
