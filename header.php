@@ -24,4 +24,14 @@
 <meta name="msapplication-TileColor" content="#da532c" />
 <meta name="theme-color" content="#fee7e7" />
 <!-- javascriptファイルへカスタムデータ属性を使って、イメージが格納されているディレクトリを渡すだけのscriptタグ -->
-<script id="data-bridge" data-themeuri="<?= get_template_directory_uri() ?>"></script>	
+<script id="data-bridge" data-themeuri="<?= get_template_directory_uri() ?>"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJDBV3TZDC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJDBV3TZDC');
+</script>
+<!-- End Google tag (gtag.js) -->
