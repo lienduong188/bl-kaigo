@@ -82,7 +82,11 @@ h2{
 
 /*common section*/
 .about-wrap, .service-wrap, .company-wrap{
-	margin: 100px auto;
+	/*margin: 100px auto;*/
+	/* FIX-230225:S */
+	margin-left: auto;
+	margin-right: auto;
+	/* FIX-230225:E */
 }
 .about-sub p,.service-sub p, .company-sub p, .contact-sub p{
 	margin-bottom: 20px;
@@ -132,12 +136,21 @@ h3{
 /*about*/
 #about{
 	text-align: center;
+	/* FIX-230225:S */
+	padding-top: 100px;
+	padding-bottom: 100px;
+	/* FIX-230225:E */
 }
 #about h3{
 	margin: 0 auto 50px;
 }
 
 /*service*/
+/* FIX-230225:S */
+#service {
+	padding-bottom: 100px;
+}
+/* FIX-230225:E */
 .btn-list{
 	display: flex;
 	flex-wrap: wrap;
@@ -170,7 +183,14 @@ h3{
 }
 
 /*company*/
-
+/* FIX-230225:S */
+#company {
+	padding-bottom: 100px;
+}
+.company-wrap {
+	overflow: hidden;
+}
+/* FIX-230225:E */
 .company-inner{
 	float: right;
 }
@@ -180,8 +200,11 @@ h3{
 	width: 230px;
 }
 .news-wrap{
-	margin: -150px auto 0;
-	
+	/* FIX-230225:S */
+	/* margin: -150px auto 0; */
+	margin-left: auto;
+	margin-right: auto;
+	/* FIX-230225:E */
 }
 .news-sub dl{
 	margin-bottom: 20px;

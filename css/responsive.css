@@ -180,7 +180,9 @@
 		width: 115px;
 	}
 	.company-wrap{
-		padding-top: 70px;
+		/* FIX-230225:S */
+		/* padding-top: 70px; */
+		/* FIX-230225:E */
 	}
 	.company-bg{
 		background: url("../images/company.jpg") no-repeat bottom left;
